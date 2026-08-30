@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammattitaitoinen autokorjaamo - Vantaa | J Taurén Oy</title>
+    <meta name="description" content="Ford Transit -huoltoon erikoistunut autokorjaamo Vantaalla. Määräaikaishuollot, korjaukset, venehuolto ja tiepalvelu. Ota yhteyttä!">
+    <meta property="og:title" content="J Tauren Oy – Fordeihin erikoistunut huolto & korjaus">
+    <meta property="og:description" content="Ford Transit -huoltoon erikoistunut autokorjaamo Vantaalla. Määräaikaishuollot, korjaukset, venehuolto ja tiepalvelu.">
+    <meta property="og:image" content="https://jtauren.com/og-image.png">
+    <meta property="og:url" content="https://jtauren.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "J Tauren Oy",
+      "description": "Ford Transit -pakettiautoihin erikoistunut autokorjaamo Vantaalla. Myös venehuolto ja tiepalvelu.",
+      "url": "https://jtauren.com/",
+      "telephone": "+358401400847",
+      "email": "janne@jtauren.com",
+      "vatID": "3469119-6",
+      "image": "https://jtauren.com/og-image.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Santaradantie 7 A 129",
+        "postalCode": "01380",
+        "addressLocality": "Vantaa",
+        "addressCountry": "FI"
+      },
+      "priceRange": "€€"
+    }
+    </script>
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Tauren <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="ajoneuvohuolto.html" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yhteystiedot.html" onclick="toggleDropdown(event, this)">Yhteystiedot <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                            <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Fordeihin erikoistunut huolto &amp; korjaus</h1>
+        <p>Ammattitaitoista Ford Transit -huoltoa ja korjausta Vantaalla. Luotettavaa palvelua yrityksille ja yksityisasiakkaille.</p>
+    </section>
+
+    <!-- About strip -->
+    <section class="about-strip">
+        <div class="container">
+            <div class="about-inner">
+                <div>
+                    <h2 class="section-title">Mitä tekee J Tauren Oy?</h2>
+                    <p class="section-sub">Vuosikymmenten kokemus Ford Transit -ajoneuvoista</p>
+                    <p>J Tauren Oy on tunnettu erityisesti Ford Transit -pakettiautojen syvällisestä huolto- ja korjausosaamisesta. Pitkä kokemuksemme ja aito intohimomme Fordeihin takaavat, että hyötyajoneuvosi pysyy luotettavasti ajossa.</p>
+                    <br>
+                    <p>Osaamisemme ei kuitenkaan rajoitu vain pakettiautoihin. Vuosikymmenten kokemuksemme kattaa laajasti kaikki bensa- ja dieselajoneuvot merkistä ja mallista riippumatta. Olipa kyseessä perheen kakkosauto, määräaikaishuolto tai vaativampi moottoriremontti, meiltä löytyy ammattitaito ja työkalut vian ratkaisemiseen.</p>
+                    <br>
+                    <p>Käytössämme on moderni diagnostiikkalaitteisto ja laadukkaat varaosat, joten saat autollesi kerralla oikean korjauksen – ilman ylimääräisiä kuluja tai viivytyksiä.</p>
+                    <a href="ajoneuvohuolto.html" class="btn" style="margin-top:8px;">Tutustu palveluihin</a>
+                </div>
+                <div style="text-align: center;">
+                    <img src="autokorjaamo vantaa.avif" alt="Autokorjaamo Vantaa" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ajoneuvojen huolto & korjaus -->
+    <section class="section">
+        <div class="container">
+            <div class="about-inner">
+                <img src="palvelut/autokorjaamo.avif" alt="Ajoneuvojen huolto ja korjaus" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
+                <div>
+                    <h2 class="section-title">Ajoneuvojen huolto &amp; korjaus</h2>
+                    <p>Erikoisosaamisemme on Ford Transit -pakettiautojen huolto ja korjaus, mutta palvelemme kaikkia bensa- ja dieselajoneuvoja merkistä riippumatta. Käytössämme on moderni diagnostiikkalaitteisto ja laadukkaat varaosat — kerralla kuntoon.</p>
+                    <br>
+                    <a href="ajoneuvohuolto.html" class="btn" style="margin-top:8px;">Lue lisää</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veneet & Tiepalvelu -->
+    <section class="about-strip">
+        <div class="container">
+            <div class="about-inner">
+                <div>
+                    <h2 class="section-title">Veneiden ja perämoottorien huolto</h2>
+                    <p>Pidämme huolta, että matkasi jatkuu turvallisesti myös vesillä. Tarjoamme asiantuntevaa venehuoltoa, joka kattaa muun muassa perämoottorien kausihuollot, öljynvaihdot ja tekniset korjaukset. Huollamme veneesi ammattitaidolla, jotta voit nauttia veneilykaudesta ilman huolia.</p>
+                    <br>
+                    <a href="veneidenhuolto.html" class="btn" style="margin-top:8px;">Lue lisää</a>
+                </div>
+                <img src="peramoottorinoljynvaihto.jpg" alt="Veneiden huolto" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="about-inner">
+                <img src="Tiepalvelukuva.png" alt="Tiepalvelu" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
+                <div>
+                    <h2 class="section-title">Nopeasti auttava tiepalvelu</h2>
+                    <p>Matka katkesi yllättäen? Ei hätää, J Tauren Oy auttaa myös silloin, kun ongelma iskee kesken ajon. Olipa kyseessä renkaan puhkeaminen, akun hyytyminen tai muu tekninen vika, tulemme paikan päälle ratkaisemaan tilanteen nopeasti ja turvallisesti, jotta pääset jatkamaan matkaasi.</p>
+                    <br>
+                    <a href="tiepalvelu.html" class="btn" style="margin-top:8px;">Lue lisää</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Onko Transit huollon tarpeessa?</h2>
+            <p>Ota yhteyttä – vastataan nopeasti ja sovitaan sopiva aika.</p>
+            <a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="ajoneuvohuolto.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 140 0847</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 Santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+358401400847" class="call-fab" aria-label="Soita meille">📞</a>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

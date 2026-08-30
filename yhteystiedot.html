@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot | J Taurén Oy</title>
+    <meta name="description" content="Ota yhteyttä J Tauren Oy:hyn — autokorjaamo Vantaalla. Puhelin 040 140 0847, Santaradantie 7 A 129, 01380 Vantaa. Lähetä viesti lomakkeella.">
+    <meta property="og:title" content="Yhteystiedot – J Tauren Oy">
+    <meta property="og:description" content="Autokorjaamo Vantaalla. Puhelin 040 140 0847, Santaradantie 7 A 129, 01380 Vantaa.">
+    <meta property="og:image" content="https://jtauren.com/og-image.png">
+    <meta property="og:url" content="https://jtauren.com/yhteystiedot">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Tauren <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="ajoneuvohuolto.html" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yhteystiedot.html" class="active" onclick="toggleDropdown(event, this)">Yhteystiedot <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                            <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page hero -->
+    <section class="hero" style="padding: 0; position: relative; min-height: 500px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="JTaurenOy.avif" alt="J Taurén Oy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:contain; object-position: center center; opacity:0.5; background:#1b3a6b;">
+        <div style="position:relative; text-align:center; padding: 60px 24px;">
+            <h1>Ota yhteyttä</h1>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Left: contact info -->
+                <div>
+                    <div class="contact-box">
+                        <h3>Yhteystiedot</h3>
+
+                        <div class="contact-row">
+                            <span class="ci">📞</span>
+                            <div>
+                                <strong>Puhelin</strong><br>
+                                <a href="tel:+358401400847">040 140 0847</a><br>
+                                <a href="tel:+358404880361">040 488 0361</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <span class="ci">✉️</span>
+                            <div>
+                                <strong>Sähköposti</strong><br>
+                                <a href="mailto:janne@jtauren.com">janne@jtauren.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <span class="ci">📍</span>
+                            <div>
+                                <strong>Osoite</strong><br>
+                                Santaradantie 7 A 129<br>
+                                01380 Vantaa
+                            </div>
+                        </div>
+
+                        <div class="contact-row">
+                            <span class="ci">🏢</span>
+                            <div>
+                                <strong>Y-tunnus</strong><br>
+                                3469119-6
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="margin-top:18px; border-radius:10px; overflow:hidden; box-shadow:var(--shadow);">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.4133807204757!2d25.064351376724495!3d60.28969473378169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692064b40bdf0c3%3A0xa63b47ca2da1dfbc!2sSantaradantie%207%20129%2C%2001380%20Vantaa!5e0!3m2!1sen!2sfi!4v1782672078097!5m2!1sen!2sfi" width="100%" height="280" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right: contact form -->
+                <div class="contact-box">
+                    <h3>Lähetä viesti</h3>
+                    <form id="yhteydenotto-lomake" action="https://formspree.io/f/mgaevqqd" method="POST">
+                        <input type="hidden" name="_subject" value="Yhteydenotto – jtauren.com">
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none;">
+                        <input type="text" name="nimi" placeholder="Nimesi *" required>
+                        <input type="tel" name="puhelin" id="puhelin" placeholder="Puhelinnumero" minlength="5">
+                        <div id="puhelin-virhe" style="color:#c0392b; font-size:0.85rem; margin-top:-8px; display:none;">Tarkista puhelinnumero (väh. 5 merkkiä)</div>
+                        <input type="email" name="email" placeholder="Sähköpostiosoite *" required>
+                        <select name="palvelu">
+                            <option value="" disabled selected>Valitse palvelu...</option>
+                            <option value="maaraikaishuolto">Määräaikaishuolto</option>
+                            <option value="jarruhuolto">Jarruhuolto</option>
+                            <option value="diagnostiikka">Diagnostiikka / vikakoodit</option>
+                            <option value="moottori">Moottori / voimansiirto</option>
+                            <option value="ilmastointi">Ilmastointi</option>
+                            <option value="alusta">Alusta / jousitus</option>
+                            <option value="sahko">Sähköjärjestelmät</option>
+                            <option value="katsastus">Katsastuskunnostus</option>
+                            <option value="muu">Muu</option>
+                        </select>
+                        <input type="text" name="ajoneuvo" placeholder="Ajoneuvon malli ja vuosimalli (esim. Transit 2019)">
+                        <input type="text" name="rekisterinumero" placeholder="Rekisterinumero (esim. ABC-123)">
+                        <textarea name="viesti" placeholder="Kerro lisää – miten voimme auttaa? *" required></textarea>
+                        <label style="display:flex; align-items:flex-start; gap:10px; font-size:0.9rem; color:#555; cursor:pointer;">
+                            <input type="checkbox" name="gdpr" required style="margin-top:3px; width:16px; height:16px; flex-shrink:0; accent-color:var(--blue-mid);">
+                            <span>Hyväksyn, että antamiani yhteystietoja käytetään yhteydenottoon. Tietoja ei luovuteta kolmansille osapuolille.</span>
+                        </label>
+                        <button type="submit" class="btn">Lähetä viesti</button>
+                    </form>
+                    <div id="form-msg" style="margin-top:14px; font-weight:600; display:none;"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="ajoneuvohuolto.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 140 0847</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+358401400847" class="call-fab" aria-label="Soita meille">📞</a>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+
+        document.getElementById('puhelin').addEventListener('blur', function() {
+            const virhe = document.getElementById('puhelin-virhe');
+            const val = this.value.replace(/\s/g, '');
+            if (val.length > 0 && val.length < 5) {
+                virhe.style.display = 'block';
+            } else {
+                virhe.style.display = 'none';
+            }
+        });
+
+        const lomake = document.getElementById('yhteydenotto-lomake');
+        const msg = document.getElementById('form-msg');
+
+        const kielletyt = [
+            'vittu', 'vitun', 'vittua', 'perkele', 'saatana', 'helvetti', 'jumalauta',
+            'paska', 'mulkku', 'pillu', 'kyrpa', 'kyrpä', 'huora', 'idiootti', 'homo',
+            'fuck', 'shit', 'bastard', 'dick', 'bitch', 'cunt', 'asshole'
+        ];
+
+        function naytaViesti(teksti, vari) {
+            msg.style.display = 'block';
+            msg.style.color = vari;
+            msg.textContent = teksti;
+        }
+
+        lomake.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            msg.style.display = 'none';
+            document.getElementById('puhelin-virhe').style.display = 'none';
+
+            const puhelin = document.getElementById('puhelin');
+            const puhVal = puhelin.value.replace(/\s/g, '');
+            if (puhVal.length > 0 && puhVal.length < 5) {
+                document.getElementById('puhelin-virhe').style.display = 'block';
+                puhelin.focus();
+                return;
+            }
+
+            const tarkistettava = (lomake.nimi.value + ' ' + lomake.viesti.value).toLowerCase();
+            if (kielletyt.some(sana => tarkistettava.includes(sana))) {
+                naytaViesti('⛔ Viesti sisältää kiellettyjä sanoja eikä sitä voida lähettää.', '#c0392b');
+                return;
+            }
+
+            const nappi = lomake.querySelector('button[type="submit"]');
+            nappi.disabled = true;
+            nappi.textContent = 'Lähetetään...';
+
+            try {
+                const vastaus = await fetch(lomake.action, {
+                    method: 'POST',
+                    body: new FormData(lomake),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (vastaus.ok) {
+                    lomake.reset();
+                    naytaViesti('✅ Viesti lähetetty! Otamme yhteyttä pian.', 'var(--blue-mid)');
+                } else {
+                    naytaViesti('❌ Viestin lähetys epäonnistui. Kokeile uudelleen tai soita meille.', '#c0392b');
+                }
+            } catch (virhe) {
+                naytaViesti('❌ Yhteysvirhe – tarkista verkkoyhteys tai soita meille.', '#c0392b');
+            } finally {
+                nappi.disabled = false;
+                nappi.textContent = 'Lähetä viesti';
+            }
+        });
+    </script>
+
+</body>
+</html>

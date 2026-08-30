@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venehuolto ja perämoottorin huolto Vantaa | J Taurén Oy</title>
+    <meta name="description" content="Veneiden ja perämoottorien huolto Vantaalla. Kausihuollot, öljynvaihdot, mekaaniset korjaukset ja sähköjärjestelmät ammattitaidolla.">
+    <meta property="og:title" content="Veneiden huolto – J Tauren Oy">
+    <meta property="og:description" content="Veneiden ja perämoottorien huolto Vantaalla. Kausihuollot, öljynvaihdot, mekaaniset korjaukset ja sähköjärjestelmät.">
+    <meta property="og:image" content="https://jtauren.com/og-image.png">
+    <meta property="og:url" content="https://jtauren.com/veneidenhuolto">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Tauren <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="ajoneuvohuolto.html" class="active" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yhteystiedot.html" onclick="toggleDropdown(event, this)">Yhteystiedot <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                            <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero" style="padding: 0; position: relative; min-height: 340px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="peramoottorinoljynvaihto.jpg" alt="Veneiden huolto" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.35;">
+        <div style="position:relative; text-align:center; padding: 60px 24px;">
+            <h1>perämoottorin huolto vantaa</h1>
+            <p>Ammattitaitoista veneiden huolto- ja korjauspalvelua — pidämme veneesi kunnossa.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Veneiden huoltopalvelut</h2>
+            <p class="section-sub">Huolehdimme veneesi kunnosta niin kauden alussa kuin sen aikanakin.</p>
+            <div class="service-img-grid">
+                <div class="service-img-card">
+                    <img loading="lazy" src="Veneiden huolto kuvia/moottorin huolto.avif" alt="Moottorin huolto">
+                    <div class="card-body">
+                        <h3>Moottorin huolto</h3>
+                        <p>Perämoottoreiden ja sisämoottoreiden huollot, öljynvaihdot ja suodattimet. Moottori kuntoon ennen vesille lähtöä.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="Veneiden huolto kuvia/mekaaniset korjaukset.avif" alt="Mekaaniset korjaukset">
+                    <div class="card-body">
+                        <h3>Mekaaniset korjaukset</h3>
+                        <p>Ohjausjärjestelmät, potkurit, akselit ja muut mekaaniset komponentit tarkistettuna ja korjattuna.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="Veneiden huolto kuvia/sahkojarjestelmat.avif" alt="Sähköjärjestelmät">
+                    <div class="card-body">
+                        <h3>Sähköjärjestelmät</h3>
+                        <p>Akut, navigointilaitteet, valaistus ja muut veneen sähköiset järjestelmät.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="Veneiden huolto kuvia/hitsaustyot.avif" alt="Hitsaustyöt">
+                    <div class="card-body">
+                        <h3>Hitsaustyöt</h3>
+                        <p>Metallirakenteiden, rungon ja muiden hitsausta vaativien osien korjaukset.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="Veneiden huolto kuvia/kausihuolto.avif" alt="Kausihuolto">
+                    <div class="card-body">
+                        <h3>Kausihuolto</h3>
+                        <p>Kevät- ja syyshuollot — vesille lasku ja talvisäilytysvalmisteluhuolto kerralla kuntoon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Varaa veneen huoltoaika</h2>
+            <p>Ota yhteyttä — sovitaan sopiva aika.</p>
+            <a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="ajoneuvohuolto.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 1400847</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 Santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+358401400847" class="call-fab" aria-label="Soita meille">📞</a>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

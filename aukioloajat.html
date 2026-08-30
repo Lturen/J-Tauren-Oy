@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autokorjaamo auki viikonloppuisin Vantaa | J Taurén Oy</title>
+    <meta name="description" content="Autokorjaamo auki myös viikonloppuisin Vantaalla. J Tauren Oy palvelee joustavasti toiveidesi mukaan — ei kiinteitä aukioloaikoja. Soita 040 140 0847.">
+    <meta property="og:title" content="Autokorjaamo auki viikonloppuisin Vantaa – J Tauren Oy">
+    <meta property="og:description" content="Palvelemme joustavasti toiveidesi mukaan — myös viikonloppuisin. Ei kiinteitä aukioloaikoja.">
+    <meta property="og:image" content="https://jtauren.com/og-image.png">
+    <meta property="og:url" content="https://jtauren.com/aukioloajat">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Tauren <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="ajoneuvohuolto.html" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yhteystiedot.html" class="active" onclick="toggleDropdown(event, this)">Yhteystiedot <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                            <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1>Autokorjaamo auki viikonloppuisin Vantaa</h1>
+        <p>Palvelemme joustavasti toiveidesi mukaan — myös viikonloppuisin.</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Aukioloajat</h2>
+            <p class="section-sub">Ei kiinteitä aukioloaikoja — palvelemme silloin kun sinulle sopii</p>
+            <p>J Tauren Oy:llä ei ole perinteisiä kiinteitä aukioloaikoja. Palvelemme asiakkaitamme joustavasti toiveiden mukaisesti — sovitaan yhdessä aika, joka sopii juuri sinun aikatauluusi.</p>
+            <br>
+            <p>Intohimosta ajoneuvojen asennusta ja korjausta kohtaan sekä touhukkaan elämäntyylin ansiosta töitä tehdään myös viikonloppuisin. Jos arki on kiireinen, lauantai tai sunnuntai käy huoltopäiväksi siinä missä arkipäiväkin.</p>
+            <br>
+            <p>Soita tai jätä yhteydenottopyyntö, niin sovitaan sopiva aika — olipa kyseessä määräaikaishuolto, korjaus tai kiireellisempi vika.</p>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Sovitaan sinulle sopiva aika</h2>
+            <p>Ota yhteyttä — palvelemme myös viikonloppuisin.</p>
+            <a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="ajoneuvohuolto.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                    <a href="aukioloajat.html">Aukioloajat</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 140 0847</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 Santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+358401400847" class="call-fab" aria-label="Soita meille">📞</a>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

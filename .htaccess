@@ -1,0 +1,19 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Piilota index.html
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Piilota .html-pääte kaikilta sivuilta
+RewriteCond %{THE_REQUEST} \.html
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Poista trailing slash
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Reititä ilman .html-päätettä oikeaan tiedostoon
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^.]+)$ $1.html [L]

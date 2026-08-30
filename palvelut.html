@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palvelut – J Taurén Oy</title>
+    <meta name="description" content="J Tauren Oy:n palvelut Vantaalla: ajoneuvojen huolto ja korjaus, veneiden huolto sekä tiepalvelu. Ford Transit -erikoisosaamisella.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Taurén <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="palvelut.html" class="active" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page hero -->
+    <section class="hero" style="padding: 60px 24px;">
+        <h1>Palvelumme</h1>
+        <p>Kattava valikoima Ford Transit -huolto- ja korjauspalveluita yhdestä paikasta.</p>
+    </section>
+
+    <!-- Main services -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Ajoneuvojen Huolto &amp; korjaus</h2>
+            <p class="section-sub">Kaikki Ford Transitin tarvitsemat huollot ja korjaukset ammattitaidolla.</p>
+
+            <div class="service-list">
+                <div class="service-card">
+                    <div class="icon">🔧</div>
+                    <div>
+                        <h3>Määräaikaishuollot</h3>
+                        <p>Suoritamme kaikki Ford Transitin määräaikaishuollot valmistajan ohjeiden mukaisesti. Huolto sisältää öljynvaihdon, suodattimien vaihdon, nesteiden tarkistuksen ja yleisen kunnon tarkastuksen. Huoltokirja päivitetään aina asianmukaisesti.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🛑</div>
+                    <div>
+                        <h3>Jarruhuollot</h3>
+                        <p>Jarrujärjestelmä on ajoneuvon tärkein turvakomponentti. Tarkistamme ja tarvittaessa vaihdamme jarrulevyt, -palat sekä jarrunesteen. Käytämme ainoastaan laadukkaita varaosia.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <div>
+                        <h3>Diagnostiikka &amp; vikakoodit</h3>
+                        <p>Ford-spesifisillä diagnostiikkalaitteilla löydämme vian nopeasti. Luemme ja nollaamme vikakoodit, päivitämme ajoneuvon ohjelmistoja sekä teemme kalibrointeja.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">⚙️</div>
+                    <div>
+                        <h3>Moottori &amp; voimansiirto</h3>
+                        <p>Moottorin korjaukset pienistä tiivisteistä aina täydelliseen moottorikunnostukseen. Myös vaihteiston, kytkimen ja kardaanin korjaukset kuuluvat osaamisemme piiriin.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">❄️</div>
+                    <div>
+                        <h3>Ilmastointi</h3>
+                        <p>Ilmastointijärjestelmän huolto, kylmäaineen täyttö sekä kompressorin ja muiden komponenttien vaihto tarpeen mukaan.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🔩</div>
+                    <div>
+                        <h3>Alusta &amp; jousitus</h3>
+                        <p>Iskunvaimentimet, jousiset, raidetangot, pallonivelet ja muut alustakomponentit. Tarkistamme suuntauksen ja säädämme sen oikeaksi.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">⚡</div>
+                    <div>
+                        <h3>Sähköjärjestelmät</h3>
+                        <p>Akkujen, laturin ja käynnistinmoottorin tarkistus ja vaihto. Myös valaistuksen, antureiden ja muun sähköistyksen korjaukset.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🔍</div>
+                    <div>
+                        <h3>Katsastuskunnostus</h3>
+                        <p>Tarkistamme ajoneuvosi ennen katsastusta ja korjaamme havaitut puutteet. Näin katsastus menee ensimmäisellä kerralla läpi.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🔥</div>
+                    <div>
+                        <h3>Hitsaustyöt</h3>
+                        <p>Ammattitaitoista hitsausta korirakenteisiin, pakokaasuputkistoihin, runkoon ja muihin metallirakenteisiin. Hoidamme niin pienet korjaukset kuin vaativammatkin hitsaustyöt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section" style="background: var(--white); padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Miksi valita meidät?</h2>
+            <p class="section-sub">Olemme Ford Transit -erikoisosaajia, emme yleiskorjaamo.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Ford-erikoisosaaminen</h3>
+                    <p>Vuosien kokemus nimenomaan Ford Transit -ajoneuvoista – tiedämme nämä autot läpikotaisin.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Ammattilaisvälineistö</h3>
+                    <p>Ford-spesifiset diagnostiikkalaitteet ja nykyaikaiset korjausvälineet takaavat tarkan ja tehokkaan työn.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Läpinäkyvä hinnoittelu</h3>
+                    <p>Kerromme aina etukäteen mitä maksaa ja miksi. Ei yllätyksiä laskussa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Varaa huoltoaika tänään</h2>
+            <p>Ota yhteyttä puhelimitse tai lomakkeella – vastaamme nopeasti.</p>
+            <a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="palvelut.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 140 0847</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 Santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

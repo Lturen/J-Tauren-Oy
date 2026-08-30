@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiepalvelu Vantaa - Autamme tarvittaessa | J Taurén Oy</title>
+    <meta name="description" content="Tiepalvelu Vantaalla ja lähialueilla. Paikalla korjaus, apuvirta, rengasrikko ja diagnostiikka — tulemme luoksesi kun auto ei liiku. Soita 040 4880361.">
+    <meta property="og:title" content="Tiepalvelu Vantaa – J Tauren Oy">
+    <meta property="og:description" content="Paikalla korjaus, apuvirta, rengasrikko ja diagnostiikka — tulemme luoksesi kun auto ei liiku.">
+    <meta property="og:image" content="https://jtauren.com/og-image.png">
+    <meta property="og:url" content="https://jtauren.com/tiepalvelu">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="J Taurén Oy logo" class="header-logo">
+            <a href="index.html" class="site-title">J Tauren <span>Oy</span><small>Fordeihin erikoistunut huolto &amp; korjaus</small></a>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="container">
+            <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li class="nav-item">
+                        <a href="ajoneuvohuolto.html" class="active" onclick="toggleDropdown(event, this)">Palvelut <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="ajoneuvohuolto.html">Ajoneuvojen huolto &amp; korjaus</a></li>
+                            <li><a href="veneidenhuolto.html">Veneiden huolto</a></li>
+                            <li><a href="tiepalvelu.html">Tiepalvelu</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="yhteystiedot.html" onclick="toggleDropdown(event, this)">Yhteystiedot <span class="nav-arrow">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+                            <li><a href="aukioloajat.html">Aukioloajat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero" style="padding: 0; position: relative; min-height: 340px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="tiepalvelukuva.png" alt="Tiepalvelu" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.35;">
+        <div style="position:relative; text-align:center; padding: 60px 24px;">
+            <h1>Tiepalvelu Vantaa</h1>
+            <p>Jäikö auto tienpäälle? Ota yhteyttä.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tiepalvelut Vantaalla ja lähialueilla</h2>
+            <p class="section-sub">Jäitkö tien päälle tai puhkesiko rengas? Ota yhteyttä — sovitaan sopiva aika nopeasti.</p>
+            <div class="service-img-grid">
+                <div class="service-img-card">
+                    <img loading="lazy" src="tiepalvelu-kuvat/paikalla korjaus.avif" alt="Paikalla korjaus">
+                    <div class="card-body">
+                        <h3>Paikalla korjaus</h3>
+                        <p>Pyrimme aina korjaamaan ajoneuvon paikan päällä — nopein tapa päästä taas liikkeelle. Yleisimmät viat kuntoon tienvarressa.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="tiepalvelu-kuvat/autonapuvirta.avif" alt="Akku ja käynnistys">
+                    <div class="card-body">
+                        <h3>Akku &amp; käynnistys</h3>
+                        <p>Tyhjä akku tai käynnistysvika hoidetaan paikan päällä — hyppykäynnistys tai akun vaihto tarpeen mukaan.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="tiepalvelu-kuvat/rengasrikko.avif" alt="Rengasrikko">
+                    <div class="card-body">
+                        <h3>Rengasrikko</h3>
+                        <p>Renkaan vaihto tai paikkaustuki tienvarressa. Tarvittaessa järjestetään kuljetus lähimpään korjaamoon.</p>
+                    </div>
+                </div>
+                <div class="service-img-card">
+                    <img loading="lazy" src="tiepalvelu-kuvat/paikan paalla diagnostiikka.avif" alt="Paikan päällä diagnostiikka">
+                    <div class="card-body">
+                        <h3>Paikan päällä diagnostiikka</h3>
+                        <p>Kannettavalla diagnostiikkalaitteella selvitämme vian syyn nopeasti myös tienvarressa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlighted call number -->
+    <section class="section" style="background: var(--white); padding: 48px 0;">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Tiepalvelu — soita heti</h2>
+            <p class="section-sub">Vastaamme puhelimeen ja tulemme paikalle niin nopeasti kuin mahdollista.</p>
+            <a href="tel:+358404880361" class="btn" style="font-size: 1.3rem; padding: 18px 40px;">📞 040 4880361</a>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <div class="container">
+            <h2>Muuta apua tarvitaan?</h2>
+            <p>Jätä yhteydenottopyyntö ja palaamme asiaan.</p>
+            <a href="yhteystiedot.html" class="btn">Ota yhteyttä</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>J Taurén Oy</h4>
+                    <p>Fordeihin erikoistunut huolto &amp; korjaus.<br>Ammattitaitoista palvelua Transit-omistajille.</p>
+                    <p>Y-tunnus: 3469119-6</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sivut</h4>
+                    <a href="index.html">Etusivu</a>
+                    <a href="ajoneuvohuolto.html">Palvelut</a>
+                    <a href="yhteystiedot.html">Yhteystiedot</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Yhteystiedot</h4>
+                    <p>📞 040 4880361</p>
+                    <p>✉️ janne@jtauren.com</p>
+                    <p>📍 Santaradantie 7 A 129, 01380 Vantaa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 J Taurén Oy. Kaikki oikeudet pidätetään.<br>
+                <small style="opacity:0.6;">Sivuston toteutus: Lauri Taurén</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+358404880361" class="call-fab" aria-label="Soita tiepalveluun">📞</a>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('main-nav').classList.toggle('open');
+        }
+        function toggleDropdown(e, el) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                el.closest('.nav-item').classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>
