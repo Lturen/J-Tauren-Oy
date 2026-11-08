@@ -1,0 +1,61 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main, developer]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: react-app/package-lock.json
+
+      - name: Build React app
+        working-directory: react-app
+        run: |
+          npm ci
+          npm run build
+          cp dist/index.html dist/404.html
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/yritys
+          # Vanha staattinen sivusto (yritysasiakkaat) osoitteeseen /yritys/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='.vscode' \
+            --exclude='react-app' --exclude='_site' --exclude='CNAME' ./ _site/yritys/
+          # Vanhan sivuston juurilinkit osoittamaan /yritys/-polkuun
+          sed -i 's|href="/"|href="/yritys/"|g; s|src="/palvelut/|src="/yritys/palvelut/|g' _site/yritys/*.html
+          # React-sovellus juureen
+          cp -r react-app/dist/. _site/
+          cp CNAME _site/CNAME
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
