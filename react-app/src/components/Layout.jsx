@@ -21,7 +21,7 @@ export default function Layout() {
   }
 
   return (
-    <>
+    <div className="theme-red">
       <header>
         <div className="container">
           <img src={img('logo.png')} alt="J Taurén Oy logo" className="header-logo" />
@@ -97,6 +97,6 @@ export default function Layout() {
       </footer>
 
       <a href="tel:+358401400847" className="call-fab" aria-label="Soita meille">📞</a>
-    </>
+    </div>
   )
 }

@@ -12,3 +12,31 @@
 .valinta-card span.sub { font-size: .9rem; color: var(--gray-text); }
 @media (max-width: 600px) { .valinta-cards { grid-template-columns: 1fr; } }
 .nav-switch a { opacity: .8; font-size: .85rem; }
+
+/* ===== Yksityisasiakkaan punainen teema (yritysasiakas pysyy sinisenä) ===== */
+.theme-red {
+    --blue-dark:  #7f1d1d;
+    --blue-mid:   #c62828;
+    --blue-light: #ef4444;
+    --blue-bg:    #fbeeee;
+    --gray-light: #faf4f4;
+    --shadow:     0 4px 18px rgba(127,29,29,0.14);
+    background: var(--gray-light);
+}
+.theme-red .btn { box-shadow: 0 4px 14px rgba(239,68,68,0.4); }
+.theme-red .btn:hover { background: #c62828; }
+.theme-red .card:hover,
+.theme-red .service-img-card:hover { box-shadow: 0 8px 28px rgba(127,29,29,0.2); }
+.theme-red form input,
+.theme-red form textarea,
+.theme-red form select { border-color: #e6cccc; }
+
+/* Valintasivun korttien värit */
+.valinta { background: #1b3a6b; background: linear-gradient(90deg, #7f1d1d 0%, #7f1d1d 50%, #1b3a6b 50%, #1b3a6b 100%); }
+.valinta-card.privat strong, .valinta-card.privat .icon { color: #c62828; }
+.valinta-card.privat:hover { box-shadow: 0 8px 28px rgba(0,0,0,.35); border-bottom: 5px solid #c62828; }
+.valinta-card.yritys strong { color: #1b3a6b; }
+.valinta-card.yritys:hover { box-shadow: 0 8px 28px rgba(0,0,0,.35); border-bottom: 5px solid #2563b0; }
+@media (max-width: 600px) {
+    .valinta { background: linear-gradient(180deg, #7f1d1d 0%, #7f1d1d 50%, #1b3a6b 50%, #1b3a6b 100%); }
+}
