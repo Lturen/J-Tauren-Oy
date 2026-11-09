@@ -52,6 +52,7 @@ export default function Layout() {
                   <li><NavLink to="/yksityinen/tiepalvelu">Tiepalvelu</NavLink></li>
                 </ul>
               </li>
+              <li><NavLink to="/yksityinen/viikonloppupaivystys">Viikonloppupäivystys</NavLink></li>
               <li className={`nav-item ${sub === 'y' ? 'open' : ''}`}>
                 <NavLink to="/yksityinen/yhteystiedot" onClick={toggleSub('y')}>
                   Yhteystiedot <span className="nav-arrow">▼</span>
@@ -81,6 +82,7 @@ export default function Layout() {
               <h4>Sivut</h4>
               <Link to="/yksityinen">Etusivu</Link>
               <Link to="/yksityinen/ajoneuvohuolto">Palvelut</Link>
+              <Link to="/yksityinen/viikonloppupaivystys">Viikonloppupäivystys</Link>
               <Link to="/yksityinen/yhteystiedot">Yhteystiedot</Link>
               <Link to="/">Vaihda asiakastyyppiä</Link>
             </div>

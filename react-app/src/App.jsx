@@ -8,6 +8,7 @@ import Veneidenhuolto from './pages/Veneidenhuolto.jsx'
 import Tiepalvelu from './pages/Tiepalvelu.jsx'
 import Yhteystiedot from './pages/Yhteystiedot.jsx'
 import Aukioloajat from './pages/Aukioloajat.jsx'
+import Viikonloppupaivystys from './pages/Viikonloppupaivystys.jsx'
 
 // Ohjaa vanhat osoitteet (esim. QR-koodit, hakutulokset) uuteen paikkaan
 function Redirect({ to }) {
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="tiepalvelu" element={<Tiepalvelu />} />
         <Route path="yhteystiedot" element={<Yhteystiedot />} />
         <Route path="aukioloajat" element={<Aukioloajat />} />
+        <Route path="viikonloppupaivystys" element={<Viikonloppupaivystys />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
