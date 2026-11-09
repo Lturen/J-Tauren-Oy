@@ -24,7 +24,9 @@ export default function Layout() {
     <div className="theme-red">
       <header>
         <div className="container">
-          <img src={img('logo.png')} alt="J Taurén Oy logo" className="header-logo" />
+          <Link to="/" aria-label="Takaisin asiakastyypin valintaan" title="Takaisin asiakastyypin valintaan">
+            <img src={img('logo.png')} alt="J Taurén Oy logo" className="header-logo" />
+          </Link>
           <Link to="/yksityinen" className="site-title">
             J Tauren <span>Oy</span>
             <small>Fordeihin erikoistunut huolto &amp; korjaus</small>

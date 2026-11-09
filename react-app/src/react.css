@@ -40,3 +40,7 @@
 @media (max-width: 600px) {
     .valinta { background: linear-gradient(180deg, #7f1d1d 0%, #7f1d1d 50%, #1b3a6b 50%, #1b3a6b 100%); }
 }
+
+/* Valintasivun kuvat */
+.valinta-card .card-img { height: 130px; width: 130px; object-fit: contain; border-radius: 50%; display: block; margin: 0 auto 12px; filter: none; }
+.valinta-main .ford-badge { height: 56px; width: auto; margin: 0 auto 14px; filter: none; }
